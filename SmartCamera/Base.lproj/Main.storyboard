@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GA9-Cn-eba">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find a computer-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Camera" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PhotoViewController" customModule="SmartCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QZP-cD-UzW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QZP-cD-UzW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FDl-Pc-aWY"/>
+                            <constraint firstAttribute="trailing" secondItem="QZP-cD-UzW" secondAttribute="trailing" id="XBl-d1-d59"/>
+                            <constraint firstItem="QZP-cD-UzW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nZg-8W-cp2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QZP-cD-UzW" secondAttribute="bottom" id="qzB-uL-kz8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find a computer" id="ZKq-jx-D8x">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="gnO-H1-YpU">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" id="mId-VD-LIC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="gnO-H1-YpU" id="bGP-I3-ftq"/>
+                        <outlet property="imageView" destination="QZP-cD-UzW" id="1O9-Zv-W4I"/>
+                        <segue destination="GA9-Cn-eba" kind="presentation" identifier="showAlarmViewControllerSegue" id="5di-qe-HxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="638" y="136"/>
+        </scene>
+        <!--My Alarm View Controller-->
+        <scene sceneID="OLr-2a-TYv">
+            <objects>
+                <viewController id="8hy-2f-Joq" customClass="MyAlarmViewController" customModule="SmartCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QNt-Fr-CDX"/>
+                        <viewControllerLayoutGuide type="bottom" id="MoQ-Sn-4fU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dbc-th-6dw">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2iB-hz-mGr">
+                                <rect key="frame" x="47" y="273" width="281" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Alarm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8SV-6s-IUr">
+                                        <rect key="frame" x="0.0" y="0.0" width="224" height="57"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="48"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09E-vr-81b">
+                                        <rect key="frame" x="224" y="13" width="59" height="31"/>
+                                        <color key="onTintColor" red="0.41568627450000001" green="0.80000000000000004" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="alarmSwitchTapped:" destination="8hy-2f-Joq" eventType="valueChanged" id="h1f-WS-Mnq"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please make sure to turn on your sound so you can hear the alarm in the morning" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J2x-8X-zJL">
+                                <rect key="frame" x="-0.5" y="545" width="375" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your alarm is currently set to:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mcE-AL-UH3">
+                                <rect key="frame" x="19" y="18" width="337.5" height="42.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2iB-hz-mGr" firstAttribute="centerX" secondItem="dbc-th-6dw" secondAttribute="centerX" id="3S3-ne-IKp"/>
+                            <constraint firstItem="mcE-AL-UH3" firstAttribute="top" secondItem="QNt-Fr-CDX" secondAttribute="bottom" constant="18" id="6Um-O8-wrE"/>
+                            <constraint firstItem="J2x-8X-zJL" firstAttribute="width" secondItem="dbc-th-6dw" secondAttribute="width" id="AiN-AX-hvp"/>
+                            <constraint firstItem="mcE-AL-UH3" firstAttribute="width" secondItem="dbc-th-6dw" secondAttribute="width" multiplier="0.9" id="DUY-Q3-44E"/>
+                            <constraint firstItem="MoQ-Sn-4fU" firstAttribute="top" secondItem="J2x-8X-zJL" secondAttribute="bottom" constant="20" id="jNw-0X-0KE"/>
+                            <constraint firstItem="2iB-hz-mGr" firstAttribute="width" secondItem="dbc-th-6dw" secondAttribute="width" multiplier="0.75" id="mGb-Yg-nfz"/>
+                            <constraint firstItem="2iB-hz-mGr" firstAttribute="centerY" secondItem="dbc-th-6dw" secondAttribute="centerY" id="neN-yM-2rE"/>
+                            <constraint firstItem="mcE-AL-UH3" firstAttribute="centerX" secondItem="dbc-th-6dw" secondAttribute="centerX" id="sbK-Di-cG4"/>
+                            <constraint firstItem="J2x-8X-zJL" firstAttribute="centerX" secondItem="dbc-th-6dw" secondAttribute="centerX" id="vLj-mR-Vg5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XuS-Cz-AuC">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="6km-c6-BYM">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="fwW-Xj-5Qv" kind="presentation" id="wtz-1b-IPo"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Ck6-ha-aXg">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <segue destination="zje-xl-o4L" kind="show" identifier="showSetAlarmViewControllerSegue" id="FHI-Kb-Lwm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alarmLabel" destination="8SV-6s-IUr" id="x98-aA-T6w"/>
+                        <outlet property="alarmSwitch" destination="09E-vr-81b" id="yhk-cu-mhd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boQ-7c-3bY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="-1498"/>
+        </scene>
+        <!--Edit Alarm-->
+        <scene sceneID="iIf-YI-3Vj">
+            <objects>
+                <viewController id="Oxq-Dv-yD3" customClass="SetAlarmViewController" customModule="SmartCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tHW-8I-txe"/>
+                        <viewControllerLayoutGuide type="bottom" id="wAO-pK-Wz1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Ay-pu-8LB">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="fRa-0p-PGL">
+                                <rect key="frame" x="0.0" y="50" width="375" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="522087050.65298003">
+                                    <!--2017-07-18 16:10:50 +0000-->
+                                </date>
+                            </datePicker>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconRed" translatesAutoresizingMaskIntoConstraints="NO" id="qb1-1R-bif">
+                                <rect key="frame" x="122" y="333.5" width="131" height="131"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qb1-1R-bif" secondAttribute="height" multiplier="1:1" id="bWB-ce-LpP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qb1-1R-bif" firstAttribute="width" secondItem="1Ay-pu-8LB" secondAttribute="width" multiplier="0.35" id="A9S-lH-0xR"/>
+                            <constraint firstItem="fRa-0p-PGL" firstAttribute="width" secondItem="1Ay-pu-8LB" secondAttribute="width" id="Aeb-6q-3yq"/>
+                            <constraint firstItem="fRa-0p-PGL" firstAttribute="centerX" secondItem="1Ay-pu-8LB" secondAttribute="centerX" id="XFw-Yn-9rb"/>
+                            <constraint firstItem="fRa-0p-PGL" firstAttribute="top" secondItem="tHW-8I-txe" secondAttribute="bottom" constant="50" id="XGm-C3-9He"/>
+                            <constraint firstItem="qb1-1R-bif" firstAttribute="top" secondItem="fRa-0p-PGL" secondAttribute="bottom" multiplier="1.25" constant="1" id="sqt-nc-HoH"/>
+                            <constraint firstItem="qb1-1R-bif" firstAttribute="centerX" secondItem="1Ay-pu-8LB" secondAttribute="centerX" id="u9z-et-T3R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Alarm" id="dae-nk-ET2">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="dr8-hu-Zj2">
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="Oxq-Dv-yD3" id="aQ5-wn-TDG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="sdW-Aq-19Z">
+                            <color key="tintColor" red="0.41568627450000001" green="0.80000000000000004" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="Oxq-Dv-yD3" id="Vgl-9Z-f4n"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="alarmPicker" destination="fRa-0p-PGL" id="4Vu-u6-Puh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lts-qa-DAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2502" y="-715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="A25-5T-Mzi">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8ZW-Qo-GZ6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="aYF-jx-dY7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.96688669920000003" green="0.3158153594" blue="0.27638882399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WDE-xA-baG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="seD-Hr-bHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="137"/>
+        </scene>
+        <!--What do you have in your house...-->
+        <scene sceneID="6ao-t5-CDY">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jc9-wj-jXW" customClass="SettingsViewController" customModule="SmartCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nQV-pX-gCY"/>
+                        <viewControllerLayoutGuide type="bottom" id="BKw-uE-2hQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2x5-RU-4md">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RUB-n4-4hZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="542.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="cIr-1P-q8f">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cIr-1P-q8f" id="QAD-iO-AsL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dn1-wl-Dz6">
+                                <rect key="frame" x="-0.5" y="542.5" width="375" height="60.5"/>
+                                <color key="backgroundColor" red="0.41568627450980389" green="0.80000000000000004" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="28"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="Jc9-wj-jXW" eventType="touchUpInside" id="IOi-st-PMK"/>
+                                    <segue destination="GA9-Cn-eba" kind="show" identifier="enterAppSegue" id="4xg-lr-O87"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dn1-wl-Dz6" firstAttribute="centerX" secondItem="2x5-RU-4md" secondAttribute="centerX" id="6Gi-LP-nr4"/>
+                            <constraint firstItem="RUB-n4-4hZ" firstAttribute="top" secondItem="2x5-RU-4md" secondAttribute="top" id="6Ub-oX-OGu"/>
+                            <constraint firstItem="dn1-wl-Dz6" firstAttribute="width" secondItem="2x5-RU-4md" secondAttribute="width" id="AHu-zi-TKP"/>
+                            <constraint firstItem="RUB-n4-4hZ" firstAttribute="leading" secondItem="2x5-RU-4md" secondAttribute="leading" id="bX9-IG-RHb"/>
+                            <constraint firstItem="dn1-wl-Dz6" firstAttribute="top" secondItem="RUB-n4-4hZ" secondAttribute="bottom" id="ew7-Qm-Fkd"/>
+                            <constraint firstAttribute="bottom" secondItem="dn1-wl-Dz6" secondAttribute="bottom" id="gzV-g0-eCK"/>
+                            <constraint firstItem="dn1-wl-Dz6" firstAttribute="height" secondItem="2x5-RU-4md" secondAttribute="height" multiplier="0.1" id="h8W-7O-FhD"/>
+                            <constraint firstAttribute="trailing" secondItem="RUB-n4-4hZ" secondAttribute="trailing" id="xLG-f1-tAL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="What do you have in your house..." id="AAG-mN-a0D"/>
+                    <connections>
+                        <outlet property="tableView" destination="RUB-n4-4hZ" id="Nwk-hr-ida"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zf0-GP-6kB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="-716"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0uy-eI-C9X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GA9-Cn-eba" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="fyE-yH-QJt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.96688669920000003" green="0.3158153594" blue="0.27638882399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8hy-2f-Joq" kind="relationship" relationship="rootViewController" id="ZJi-Yz-smE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i4a-Oh-c5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-1498"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fSN-RC-daR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zje-xl-o4L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="KpY-1d-au2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.96688669920000003" green="0.3158153594" blue="0.27638882399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Oxq-Dv-yD3" kind="relationship" relationship="rootViewController" id="3wo-bi-EHa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUE-xP-37B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="-714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dVj-Cx-DfF">
+            <objects>
+                <navigationController storyboardIdentifier="SettingsNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fwW-Xj-5Qv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="21u-X4-hTK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.96688669920000003" green="0.3158153594" blue="0.27638882399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jc9-wj-jXW" kind="relationship" relationship="rootViewController" id="9m2-0D-k7B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbv-Z0-9Yg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1508" y="-716"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IconRed" width="522" height="913"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4xg-lr-O87"/>
+    </inferredMetricsTieBreakers>
+</document>

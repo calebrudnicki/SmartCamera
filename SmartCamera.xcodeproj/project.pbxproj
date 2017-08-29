@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8210761A1F54ABBC001AE00E /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82917D111F1E3A77008C8508 /* RestKit.framework */; };
+		8210761B1F54ABBC001AE00E /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82917D111F1E3A77008C8508 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8210761C1F54ABBF001AE00E /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82917D131F1E3A77008C8508 /* VisualRecognitionV3.framework */; };
+		8210761D1F54ABBF001AE00E /* VisualRecognitionV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82917D131F1E3A77008C8508 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8210761E1F54ABC3001AE00E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82917D121F1E3A77008C8508 /* SVProgressHUD.framework */; };
+		8210761F1F54ABC3001AE00E /* SVProgressHUD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 82917D121F1E3A77008C8508 /* SVProgressHUD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		821076201F54ABE6001AE00E /* CDAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827BD9F41F1EA0B000F93E07 /* CDAlertView.framework */; };
+		821076211F54ABE6001AE00E /* CDAlertView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 827BD9F41F1EA0B000F93E07 /* CDAlertView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		827BD9EF1F1E6AE600F93E07 /* SetTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827BD9EE1F1E6AE600F93E07 /* SetTimeViewController.swift */; };
+		827BD9F11F1E6B0600F93E07 /* MyAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827BD9F01F1E6B0600F93E07 /* MyAlarmViewController.swift */; };
+		827BD9F31F1E719B00F93E07 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827BD9F21F1E719B00F93E07 /* CoreDataHelper.swift */; };
+		827BD9F81F1F157100F93E07 /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = 827BD9F71F1F157100F93E07 /* alarm.wav */; };
+		827BD9FA1F1FF78D00F93E07 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827BD9F91F1FF78D00F93E07 /* SettingsViewController.swift */; };
+		82917CF41F1DC84E008C8508 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82917CF31F1DC84E008C8508 /* AppDelegate.swift */; };
+		82917CF61F1DC84E008C8508 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82917CF51F1DC84E008C8508 /* PhotoViewController.swift */; };
+		82917CF91F1DC84E008C8508 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82917CF71F1DC84E008C8508 /* Main.storyboard */; };
+		82917CFC1F1DC84E008C8508 /* SmartCamera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82917CFA1F1DC84E008C8508 /* SmartCamera.xcdatamodeld */; };
+		82917CFE1F1DC84E008C8508 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82917CFD1F1DC84E008C8508 /* Assets.xcassets */; };
+		82917D011F1DC84E008C8508 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82917CFF1F1DC84E008C8508 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		821076191F54AB9A001AE00E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8210761D1F54ABBF001AE00E /* VisualRecognitionV3.framework in Embed Frameworks */,
+				8210761F1F54ABC3001AE00E /* SVProgressHUD.framework in Embed Frameworks */,
+				8210761B1F54ABBC001AE00E /* RestKit.framework in Embed Frameworks */,
+				821076211F54ABE6001AE00E /* CDAlertView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		827BD9EE1F1E6AE600F93E07 /* SetTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTimeViewController.swift; sourceTree = "<group>"; };
+		827BD9F01F1E6B0600F93E07 /* MyAlarmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlarmViewController.swift; sourceTree = "<group>"; };
+		827BD9F21F1E719B00F93E07 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		827BD9F41F1EA0B000F93E07 /* CDAlertView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CDAlertView.framework; path = Carthage/Build/iOS/CDAlertView.framework; sourceTree = "<group>"; };
+		827BD9F71F1F157100F93E07 /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm.wav; sourceTree = "<group>"; };
+		827BD9F91F1FF78D00F93E07 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		82917CF01F1DC84E008C8508 /* SmartCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82917CF31F1DC84E008C8508 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82917CF51F1DC84E008C8508 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		82917CF81F1DC84E008C8508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82917CFB1F1DC84E008C8508 /* SmartCamera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartCamera.xcdatamodel; sourceTree = "<group>"; };
+		82917CFD1F1DC84E008C8508 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82917D001F1DC84E008C8508 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82917D021F1DC84E008C8508 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82917D081F1E3A17008C8508 /* RestKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RestKit.framework.dSYM; path = Carthage/Build/iOS/RestKit.framework.dSYM; sourceTree = "<group>"; };
+		82917D091F1E3A17008C8508 /* SVProgressHUD.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SVProgressHUD.framework.dSYM; path = Carthage/Build/iOS/SVProgressHUD.framework.dSYM; sourceTree = "<group>"; };
+		82917D0A1F1E3A17008C8508 /* VisualRecognitionV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = VisualRecognitionV3.framework.dSYM; path = Carthage/Build/iOS/VisualRecognitionV3.framework.dSYM; sourceTree = "<group>"; };
+		82917D0B1F1E3A2D008C8508 /* RestKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RestKit.framework.dSYM; path = Carthage/Build/iOS/RestKit.framework.dSYM; sourceTree = "<group>"; };
+		82917D0C1F1E3A2D008C8508 /* SVProgressHUD.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SVProgressHUD.framework.dSYM; path = Carthage/Build/iOS/SVProgressHUD.framework.dSYM; sourceTree = "<group>"; };
+		82917D0D1F1E3A2D008C8508 /* VisualRecognitionV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = VisualRecognitionV3.framework.dSYM; path = Carthage/Build/iOS/VisualRecognitionV3.framework.dSYM; sourceTree = "<group>"; };
+		82917D0E1F1E3A3C008C8508 /* RestKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RestKit.framework.dSYM; path = Carthage/Build/iOS/RestKit.framework.dSYM; sourceTree = "<group>"; };
+		82917D0F1F1E3A3C008C8508 /* SVProgressHUD.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SVProgressHUD.framework.dSYM; path = Carthage/Build/iOS/SVProgressHUD.framework.dSYM; sourceTree = "<group>"; };
+		82917D101F1E3A3C008C8508 /* VisualRecognitionV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = VisualRecognitionV3.framework.dSYM; path = Carthage/Build/iOS/VisualRecognitionV3.framework.dSYM; sourceTree = "<group>"; };
+		82917D111F1E3A77008C8508 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = Carthage/Build/iOS/RestKit.framework; sourceTree = "<group>"; };
+		82917D121F1E3A77008C8508 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
+		82917D131F1E3A77008C8508 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = Carthage/Build/iOS/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82917CED1F1DC84E008C8508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8210761C1F54ABBF001AE00E /* VisualRecognitionV3.framework in Frameworks */,
+				8210761E1F54ABC3001AE00E /* SVProgressHUD.framework in Frameworks */,
+				8210761A1F54ABBC001AE00E /* RestKit.framework in Frameworks */,
+				821076201F54ABE6001AE00E /* CDAlertView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82917CE71F1DC84E008C8508 = {
+			isa = PBXGroup;
+			children = (
+				827BD9F41F1EA0B000F93E07 /* CDAlertView.framework */,
+				82917D111F1E3A77008C8508 /* RestKit.framework */,
+				82917D121F1E3A77008C8508 /* SVProgressHUD.framework */,
+				82917D131F1E3A77008C8508 /* VisualRecognitionV3.framework */,
+				82917D0E1F1E3A3C008C8508 /* RestKit.framework.dSYM */,
+				82917D0F1F1E3A3C008C8508 /* SVProgressHUD.framework.dSYM */,
+				82917D101F1E3A3C008C8508 /* VisualRecognitionV3.framework.dSYM */,
+				82917D0B1F1E3A2D008C8508 /* RestKit.framework.dSYM */,
+				82917D0C1F1E3A2D008C8508 /* SVProgressHUD.framework.dSYM */,
+				82917D0D1F1E3A2D008C8508 /* VisualRecognitionV3.framework.dSYM */,
+				82917D081F1E3A17008C8508 /* RestKit.framework.dSYM */,
+				82917D091F1E3A17008C8508 /* SVProgressHUD.framework.dSYM */,
+				82917D0A1F1E3A17008C8508 /* VisualRecognitionV3.framework.dSYM */,
+				82917CF21F1DC84E008C8508 /* SmartCamera */,
+				82917CF11F1DC84E008C8508 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82917CF11F1DC84E008C8508 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82917CF01F1DC84E008C8508 /* SmartCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82917CF21F1DC84E008C8508 /* SmartCamera */ = {
+			isa = PBXGroup;
+			children = (
+				82917CF31F1DC84E008C8508 /* AppDelegate.swift */,
+				827BD9F21F1E719B00F93E07 /* CoreDataHelper.swift */,
+				827BD9F91F1FF78D00F93E07 /* SettingsViewController.swift */,
+				827BD9F01F1E6B0600F93E07 /* MyAlarmViewController.swift */,
+				827BD9EE1F1E6AE600F93E07 /* SetTimeViewController.swift */,
+				82917CF51F1DC84E008C8508 /* PhotoViewController.swift */,
+				82917CF71F1DC84E008C8508 /* Main.storyboard */,
+				82917CFD1F1DC84E008C8508 /* Assets.xcassets */,
+				82917CFF1F1DC84E008C8508 /* LaunchScreen.storyboard */,
+				82917D021F1DC84E008C8508 /* Info.plist */,
+				827BD9F71F1F157100F93E07 /* alarm.wav */,
+				82917CFA1F1DC84E008C8508 /* SmartCamera.xcdatamodeld */,
+			);
+			path = SmartCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82917CEF1F1DC84E008C8508 /* SmartCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82917D051F1DC84E008C8508 /* Build configuration list for PBXNativeTarget "SmartCamera" */;
+			buildPhases = (
+				82917CEC1F1DC84E008C8508 /* Sources */,
+				82917CED1F1DC84E008C8508 /* Frameworks */,
+				82917CEE1F1DC84E008C8508 /* Resources */,
+				821076191F54AB9A001AE00E /* Embed Frameworks */,
+				821076221F54AD0F001AE00E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartCamera;
+			productName = SmartCamera;
+			productReference = 82917CF01F1DC84E008C8508 /* SmartCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82917CE81F1DC84E008C8508 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Caleb Rudnicki";
+				TargetAttributes = {
+					82917CEF1F1DC84E008C8508 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 92DETN2MKQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 82917CEB1F1DC84E008C8508 /* Build configuration list for PBXProject "SmartCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82917CE71F1DC84E008C8508;
+			productRefGroup = 82917CF11F1DC84E008C8508 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82917CEF1F1DC84E008C8508 /* SmartCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82917CEE1F1DC84E008C8508 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82917D011F1DC84E008C8508 /* LaunchScreen.storyboard in Resources */,
+				82917CFE1F1DC84E008C8508 /* Assets.xcassets in Resources */,
+				827BD9F81F1F157100F93E07 /* alarm.wav in Resources */,
+				82917CF91F1DC84E008C8508 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		821076221F54AD0F001AE00E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VisualRecognitionV3.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RestKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CDAlertView.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82917CEC1F1DC84E008C8508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				827BD9F31F1E719B00F93E07 /* CoreDataHelper.swift in Sources */,
+				827BD9EF1F1E6AE600F93E07 /* SetTimeViewController.swift in Sources */,
+				827BD9FA1F1FF78D00F93E07 /* SettingsViewController.swift in Sources */,
+				82917CFC1F1DC84E008C8508 /* SmartCamera.xcdatamodeld in Sources */,
+				82917CF61F1DC84E008C8508 /* PhotoViewController.swift in Sources */,
+				827BD9F11F1E6B0600F93E07 /* MyAlarmViewController.swift in Sources */,
+				82917CF41F1DC84E008C8508 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82917CF71F1DC84E008C8508 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82917CF81F1DC84E008C8508 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82917CFF1F1DC84E008C8508 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82917D001F1DC84E008C8508 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82917D031F1DC84E008C8508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82917D041F1DC84E008C8508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82917D061F1DC84E008C8508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92DETN2MKQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SmartCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.calebrudnicki.SmartCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		82917D071F1DC84E008C8508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92DETN2MKQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = SmartCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.calebrudnicki.SmartCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82917CEB1F1DC84E008C8508 /* Build configuration list for PBXProject "SmartCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82917D031F1DC84E008C8508 /* Debug */,
+				82917D041F1DC84E008C8508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82917D051F1DC84E008C8508 /* Build configuration list for PBXNativeTarget "SmartCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82917D061F1DC84E008C8508 /* Debug */,
+				82917D071F1DC84E008C8508 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		82917CFA1F1DC84E008C8508 /* SmartCamera.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				82917CFB1F1DC84E008C8508 /* SmartCamera.xcdatamodel */,
+			);
+			currentVersion = 82917CFB1F1DC84E008C8508 /* SmartCamera.xcdatamodel */;
+			path = SmartCamera.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 82917CE81F1DC84E008C8508 /* Project object */;
+}

@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "69f1e87484ee51686157a2287d9220a6b45f37c3078ab9a5a19e27a5bef62537",
+      "name" : "CDAlertView"
+    }
+  ],
+  "commitish" : "0.6.0",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}
