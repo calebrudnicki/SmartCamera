@@ -102,9 +102,14 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
 
     //This function opens the camera when the camera button is tapped
     @IBAction func cameraButtonTapped(_ sender: UIBarButtonItem) {
-        imagePicker.sourceType = .camera
-        imagePicker.allowsEditing = false
-        present(imagePicker, animated: true, completion: nil)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            self.performSegue(withIdentifier: "showAlarmViewControllerSegue", sender: nil)
+            self.appDelegate.stopSound()
+        } else {
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = false
+            present(imagePicker, animated: true, completion: nil)
+        }
     }
     
 
