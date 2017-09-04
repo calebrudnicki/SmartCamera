@@ -46,6 +46,12 @@ class MyAlarmViewController: UIViewController {
             alarmSwitch.isOn = true
             self.createNotification(hour: alarmHour!, minute: alarmMinute!, id: "ID")
         }
+        print(alarmLabel.text)
+        if alarmLabel.text == "No Alarm" {
+            alarmSwitch.isEnabled = false
+        } else {
+            alarmSwitch.isEnabled = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
